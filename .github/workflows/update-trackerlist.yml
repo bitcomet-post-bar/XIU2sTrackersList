@@ -2,12 +2,10 @@ name: Sync Tracker Lists
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天 UTC 时间 00:00 运行一次
+    - cron: '0 */6 * * *' # 每天 UTC 时间 00:00 运行一次
   workflow_dispatch: # 支持手动触发
   push:
     branches: [ main ]
-    paths:
-      - '.github/workflows/sync-trackers.yml' # 当此工作流文件更改时也运行
 
 jobs:
   sync-trackers:
@@ -42,10 +40,9 @@ jobs:
         
         
     - name: Commit and Push Changes
-      if: steps.check_changes.outputs.has_changes == 'true'
       uses: actions-js/push@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
-        message: "Update tracker lists - $(date +'%Y-%m-%d %H:%M')"
+        message: "Update tracker lists"
         directory: trackerlist
