@@ -1,0 +1,20 @@
+name: sync-to-gitee
+
+on:
+  push:
+  workflow_dispatch: # on button click
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+       - name: Mirror the Github organization repos to Gitee.
+         uses: Yikun/hub-mirror-action@master
+         with:
+              src: github/bitcomet-post-bar
+              dst: gitee/bitcomet-post-bar
+              dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+              dst_token: ${{ secrets.GITEE_TOKEN }}
+              account_type: user
+              white_list: "BTN-IP-LIST"

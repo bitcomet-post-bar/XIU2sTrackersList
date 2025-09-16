@@ -1,0 +1,37 @@
+name: syn-to-gitcode
+
+on:
+  push:
+  workflow_dispatch: # on button click
+
+jobs:
+  GitCode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir ~/.ssh
+          cat > ~/.ssh/id_rsa <<EOF
+          ${{secrets.GITCODE_PRIVATE_KEY}}
+          EOF
+          chmod 700 ~/.ssh/id_rsa
+          eval $(ssh-agent -s)
+          ssh-add ~/.ssh/id_rsa
+          ssh-keyscan gitcode.com >> ~/.ssh/known_hosts
+          ssh -T git@gitcode.com || true
+
+          git config --global user.name ${GITHUB_ACTOR}
+          git config --global user.email ${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com
+
+          REPOURL=BTN-IP-LIST
+          REPODIR=$PWD
+          mkdir ~/TARGET
+          cd ~/TARGET
+          git clone git@gitcode.com:bitcomet-post-bar/$REPOURL.git
+          cd $REPOURL
+          rm -rf *
+          cp -rf $REPODIR/* ./
+
+          git add .
+          git commit -m "Update from GitHub" || exit 0
+          git push
