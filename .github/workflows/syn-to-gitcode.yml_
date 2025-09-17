@@ -2,6 +2,7 @@ name: syn-to-gitcode
 
 on:
   push:
+    branches: [ main ] # 指定只在推送到 main 分支时触发
   workflow_dispatch: # on button click
 
 jobs:
@@ -9,29 +10,56 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: |
-          mkdir ~/.ssh
-          cat > ~/.ssh/id_rsa <<EOF
-          ${{secrets.GITCODE_PRIVATE_KEY}}
-          EOF
-          chmod 700 ~/.ssh/id_rsa
-          eval $(ssh-agent -s)
-          ssh-add ~/.ssh/id_rsa
+        with:
+          fetch-depth: 0 # 获取完整历史记录
+          
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.GITCODE_PRIVATE_KEY }}
+          
+      - name: Add GitCode to known hosts
+        run: |
+          mkdir -p ~/.ssh
           ssh-keyscan gitcode.com >> ~/.ssh/known_hosts
-          ssh -T git@gitcode.com || true
-
-          git config --global user.name ${GITHUB_ACTOR}
-          git config --global user.email ${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com
-
-          REPOURL=BTN-IP-LIST
-          REPODIR=$PWD
-          mkdir ~/TARGET
-          cd ~/TARGET
-          git clone git@gitcode.com:bitcomet-post-bar/$REPOURL.git
-          cd $REPOURL
-          rm -rf *
-          cp -rf $REPODIR/* ./
-
+          
+      - name: Test SSH connection
+        run: |
+          ssh -T git@gitcode.com
+          
+      - name: Configure Git
+        run: |
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
+          
+      - name: Sync to GitCode
+        run: |
+          REPOURL="XIU2sTrackersList"
+          REPODIR="$PWD"
+          TARGET_DIR="$HOME/TARGET"
+          
+          mkdir -p "$TARGET_DIR"
+          cd "$TARGET_DIR"
+          
+          # 克隆或更新仓库
+          if [ -d "$REPOURL" ]; then
+            cd "$REPOURL"
+            git fetch origin
+            git reset --hard origin/main
+          else
+            git clone git@gitcode.com:bitcomet-post-bar/"$REPOURL".git
+            cd "$REPOURL"
+          fi
+          
+          # 使用 rsync 同步文件，保留 .git 目录
+          rsync -av --delete --exclude='.git' "$REPODIR/" ./
+          
+          # 检查是否有更改
+          if git diff --quiet --exit-code; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
           git add .
-          git commit -m "Update from GitHub" || exit 0
+          git commit -m "Auto-sync from GitHub"
           git push
