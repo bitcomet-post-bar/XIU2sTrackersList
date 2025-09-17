@@ -45,3 +45,9 @@ jobs:
         branch: main
         message: "Update tracker lists"
         directory: trackerlist
+        
+    - name: Trigger Other Workflow-giteed
+      uses: benc-uk/workflow-dispatch@v1
+      with:
+        workflow: sync-to-gitee.yml # 其他工作流的文件名
+        token: ${{ secrets.GITHUB_TOKEN }}
