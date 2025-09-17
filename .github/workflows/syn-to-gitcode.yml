@@ -2,7 +2,6 @@ name: syn-to-gitcode
 
 on:
 #  push:
-    branches: [ main ] # 指定只在推送到 main 分支时触发
   workflow_dispatch: # on button click
 
 jobs:
