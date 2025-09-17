@@ -2,7 +2,7 @@ name: Sync Tracker Lists
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # 每天 UTC 时间 00:00 运行一次
+    - cron: '0 */6 * * *' 
   workflow_dispatch: # 支持手动触发
   push:
     branches: [ main ]
@@ -37,7 +37,6 @@ jobs:
       run: |
         curl -s "https://raw.githubusercontent.com/XIU2/TrackersListCollection/refs/heads/master/nohttp.txt" -o trackerlist/nohttp.txt
         echo "Downloaded nohttp.txt with $(wc -l < trackerlist/nohttp.txt) lines"
-        
         
     - name: Commit and Push Changes
       uses: actions-js/push@master
