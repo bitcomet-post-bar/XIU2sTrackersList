@@ -1,7 +1,7 @@
 name: syn-to-gitcode
 
 on:
-  push:
+#  push:
     branches: [ main ] # 指定只在推送到 main 分支时触发
   workflow_dispatch: # on button click
 
@@ -23,9 +23,6 @@ jobs:
           mkdir -p ~/.ssh
           ssh-keyscan gitcode.com >> ~/.ssh/known_hosts
           
-      - name: Test SSH connection
-        run: |
-          ssh -T git@gitcode.com
           
       - name: Configure Git
         run: |
