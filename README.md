@@ -8,7 +8,7 @@
 
 * all.txt 》 [Gitee镜像](https://gitee.com/bitcomet-post-bar/XIU2sTrackersList/raw/main/trackerlist/all.txt) | [GitCod镜像](https://raw.gitcode.com/bitcomet-post-bar/XIU2sTrackersList/raw/main/trackerlist/all.txt)
 * best.txt 》 [Gitee镜像](https://gitee.com/bitcomet-post-bar/XIU2sTrackersList/raw/main/trackerlist/best.txt) | [GitCod镜像](https://raw.gitcode.com/bitcomet-post-bar/XIU2sTrackersList/raw/main/trackerlist/best.txt)
-* http.txt 》 [Gitee镜像](https://gitee.com/bitcomet-post-bar/XIU2sTrackersList/blob/main/trackerlist/http.txt) | [GitCod镜像](https://raw.gitcode.com/bitcomet-post-bar/XIU2sTrackersList/raw/main/trackerlist/http.txt)
+* http.txt 》 [Gitee镜像](https://gitee.com/bitcomet-post-bar/XIU2sTrackersList/raw/main/trackerlist/http.txt) | [GitCod镜像](https://raw.gitcode.com/bitcomet-post-bar/XIU2sTrackersList/raw/main/trackerlist/http.txt)
 * nohttp.txt 》 [Gitee镜像](https://gitee.com/bitcomet-post-bar/XIU2sTrackersList/raw/main/trackerlist/nohttp.txt) | [GitCod镜像](https://raw.gitcode.com/bitcomet-post-bar/XIU2sTrackersList/raw/main/trackerlist/nohttp.txt)
 
 ---
