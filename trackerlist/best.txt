@@ -32,8 +32,6 @@ http://www.wareztorrent.com:80/announce
 
 https://1337.abcvg.info:443/announce
 
-https://cny.fan:443/announce
-
 https://shahidrazi.online:443/announce
 
 https://t.213891.xyz:443/announce
@@ -61,6 +59,8 @@ https://tracker.zhuqiy.com:443/announce
 https://tracker1.520.jp:443/announce
 
 udp://evan.im:6969/announce
+
+udp://exodus.desync.com:6969/announce
 
 udp://extracker.dahrkael.net:6969/announce
 
@@ -108,8 +108,6 @@ udp://tracker.opentrackr.org:1337/announce
 
 udp://tracker.playground.ru:6969/announce
 
-udp://tracker.plx.im:6969/announce
-
 udp://tracker.qu.ax:6969/announce
 
 udp://tracker.riverarmy.xyz:6969/announce
@@ -131,8 +129,6 @@ udp://tracker.torrust-demo.com:6969/announce
 udp://tracker.tryhackx.org:6969/announce
 
 udp://tracker.tvunderground.org.ru:3218/announce
-
-udp://tracker1.myporn.club:9337/announce
 
 udp://uabits.today:6990/announce
 
