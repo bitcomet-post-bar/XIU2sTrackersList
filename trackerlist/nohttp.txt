@@ -22,8 +22,6 @@ udp://evan.im:6969/announce
 
 udp://exodus.desync.com:6969/announce
 
-udp://explodie.org:6969/announce
-
 udp://ipv4announce.sktorrent.eu:6969/announce
 
 udp://leet-tracker.moe:1337/announce
@@ -53,6 +51,10 @@ udp://retracker.hotplug.ru:2710/announce
 udp://seedpeer.net:6969/announce
 
 udp://speedtest.iperson.xyz:6969/announce
+
+udp://t.overflow.biz:6969/announce
+
+udp://torrent.bowed.net:8081/announce
 
 udp://torrentclub.online:54123/announce
 
@@ -90,17 +92,13 @@ udp://tracker.fnix.net:6969/announce
 
 udp://tracker.gmi.gd:6969/announce
 
-udp://tracker.hismz.cn:6969/announce
-
-udp://tracker.iperson.xyz:6969/announce
+udp://tracker.huadongblower.xyz:8080/announce
 
 udp://tracker.nyaa.vc:6969/announce
 
 udp://tracker.opentorrent.top:6969/announce
 
 udp://tracker.opentrackr.org:1337/announce
-
-udp://tracker.playground.ru:6969/announce
 
 udp://tracker.plx.im:6969/announce
 
@@ -118,13 +116,9 @@ udp://tracker.torrent.eu.org:451/announce
 
 udp://tracker.torrentclaw.com:1337/announce
 
-udp://tracker.torrust-demo.com:6969/announce
-
 udp://tracker.tryhackx.org:6969/announce
 
 udp://tracker.wildkat.net:6969/announce
-
-udp://tracker.yume-hatsuyuki.moe:6969/announce
 
 udp://tracker1.itzmx.com:8080/announce
 
@@ -134,17 +128,17 @@ udp://tracker3.itzmx.com:6961/announce
 
 udp://tracker4.itzmx.com:2710/announce
 
-udp://trackthis.cyber.pz.it:1337/announce
+udp://u.peer-exchange.download:6969/announce
 
 udp://uabits.today:6990/announce
+
+udp://udp.trackarr.org:6969/announce
 
 udp://udp.tracker.projectk.org:23333/announce
 
 udp://udp1.torrust-tracker-demo.com:6969/announce
 
 udp://vito-tracker.duckdns.org:6969/announce
-
-udp://vito-tracker.space:2095/announce
 
 udp://vito-tracker.space:6969/announce
 
