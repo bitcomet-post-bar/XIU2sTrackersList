@@ -84,6 +84,8 @@ udp://t.overflow.biz:6969/announce
 
 udp://torrents.tmtime.dev:6969/announce
 
+udp://tr4ck3r.duckdns.org:6969/announce
+
 udp://tracker-udp.gbitt.info:80/announce
 
 udp://tracker.004430.xyz:1337/announce
@@ -98,13 +100,13 @@ udp://tracker.corpscorp.online:80/announce
 
 udp://tracker.dler.com:6969/announce
 
-udp://tracker.dler.org:6969/announce
-
 udp://tracker.flatuslifir.is:6969/announce
 
 udp://tracker.fnix.net:6969/announce
 
 udp://tracker.gmi.gd:6969/announce
+
+udp://tracker.iperson.xyz:6969/announce
 
 udp://tracker.nyaa.vc:6969/announce
 
@@ -122,9 +124,9 @@ udp://tracker.srv00.com:6969/announce
 
 udp://tracker.t-1.org:6969/announce
 
-udp://tracker.theoks.net:6969/announce
-
 udp://tracker.torrent.eu.org:451/announce
+
+udp://tracker.torrust-demo.com:6969/announce
 
 udp://tracker.tryhackx.org:6969/announce
 
@@ -137,8 +139,6 @@ udp://udp.tracker.projectk.org:23333/announce
 udp://udp1.torrust-tracker-demo.com:6969/announce
 
 udp://vito-tracker.duckdns.org:6969/announce
-
-udp://vito-tracker.space:2095/announce
 
 udp://wepzone.net:6969/announce
 
