@@ -30,8 +30,6 @@ https://t.213891.xyz:443/announce
 
 https://tr.abiir.top:443/announce
 
-https://tr.abir.ga:443/announce
-
 https://tracker.7471.top:443/announce
 
 https://tracker.foreverpirates.co:443/announce
@@ -41,6 +39,8 @@ https://tracker.gcrenwp.top:443/announce
 https://tracker.kuroy.me:443/announce
 
 https://tracker.leechshield.link:443/announce
+
+https://tracker.lenition.de:443/announce
 
 https://tracker.linvk.com:443/announce
 
@@ -53,8 +53,6 @@ https://tracker.zhuqiy.com:443/announce
 https://tracker1.520.jp:443/announce
 
 udp://bittorrent-tracker.e-n-c-r-y-p-t.net:1337/announce
-
-udp://edgev.duckdns.org:6969/announce
 
 udp://evan.im:6969/announce
 
@@ -116,9 +114,9 @@ udp://tracker.cn.nyaa.net:6969/announce
 
 udp://tracker.corpscorp.online:80/announce
 
-udp://tracker.cynma.tv:6969/announce
-
 udp://tracker.dler.com:6969/announce
+
+udp://tracker.dler.org:6969/announce
 
 udp://tracker.farted.net:6969/announce
 
@@ -147,6 +145,8 @@ udp://tracker.skyts.net:6969/announce
 udp://tracker.teambelgium.net:6969/announce
 
 udp://tracker.torrent.eu.org:451/announce
+
+udp://tracker2.dler.org:80/announce
 
 udp://udp.tracker.linvk.com:6969/announce
 
