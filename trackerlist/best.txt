@@ -62,8 +62,6 @@ udp://ipv4announce.sktorrent.eu:6969/announce
 
 udp://ipv6.govt.hu:6969/announce
 
-udp://leet-tracker.moe:1337/announce
-
 udp://mail.segso.net:6969/announce
 
 udp://martin-gebhardt.eu:25/announce
@@ -141,6 +139,8 @@ udp://tracker.skyts.net:6969/announce
 udp://tracker.teambelgium.net:6969/announce
 
 udp://tracker.torrent.eu.org:451/announce
+
+udp://tracker2.dler.org:80/announce
 
 udp://whybother.torrentonline.cc:42069/announce
 
