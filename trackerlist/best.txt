@@ -10,8 +10,6 @@ http://nyaa.tracker.wf:7777/announce
 
 http://torrentsmd.com:8080/announce
 
-http://tracker.bt4g.com:2095/announce
-
 http://tracker.dhitechnical.com:6969/announce
 
 http://tracker.mywaifu.best:6969/announce
@@ -29,8 +27,6 @@ https://1337.abcvg.info:443/announce
 https://t.213891.xyz:443/announce
 
 https://tr.abiir.top:443/announce
-
-https://tr.abir.ga:443/announce
 
 https://tr.burnabyhighstar.com:443/announce
 
@@ -86,6 +82,8 @@ udp://retracker.hotplug.ru:2710/announce
 
 udp://retracker01-msk-virt.corbina.net:80/announce
 
+udp://seedpeer.net:6969/announce
+
 udp://t.overflow.biz:6969/announce
 
 udp://torrent.tracker.durukanbal.com:6969/announce
@@ -109,6 +107,8 @@ udp://tracker.breizh.pm:6969/announce
 udp://tracker.cn.nyaa.net:6969/announce
 
 udp://tracker.corpscorp.online:80/announce
+
+udp://tracker.cynma.tv:6969/announce
 
 udp://tracker.dler.com:6969/announce
 
