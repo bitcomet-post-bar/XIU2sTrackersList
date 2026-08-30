@@ -28,11 +28,11 @@ https://t.213891.xyz:443/announce
 
 https://tr.abiir.top:443/announce
 
-https://tr.abir.ga:443/announce
-
 https://tr.burnabyhighstar.com:443/announce
 
 https://tracker.7471.top:443/announce
+
+https://tracker.bug38.com:443/announce
 
 https://tracker.foreverpirates.co:443/announce
 
@@ -78,11 +78,7 @@ udp://opentor.org:2710/announce
 
 udp://p4p.arenabg.com:1337/announce
 
-udp://rekcart.duckdns.org:15480/announce
-
 udp://retracker.hotplug.ru:2710/announce
-
-udp://retracker01-msk-virt.corbina.net:80/announce
 
 udp://t.overflow.biz:6969/announce
 
@@ -102,19 +98,21 @@ udp://tracker.aruku.ovh:8081/announce
 
 udp://tracker.auctor.tv:6969/announce
 
+udp://tracker.bittor.pw:1337/announce
+
 udp://tracker.breizh.pm:6969/announce
 
 udp://tracker.cn.nyaa.net:6969/announce
 
 udp://tracker.corpscorp.online:80/announce
 
-udp://tracker.cynma.tv:6969/announce
-
 udp://tracker.dler.com:6969/announce
 
-udp://tracker.ducks.party:1984/announce
+udp://tracker.dler.org:6969/announce
 
 udp://tracker.farted.net:6969/announce
+
+udp://tracker.filemail.com:6969/announce
 
 udp://tracker.gmi.gd:6969/announce
 
@@ -144,7 +142,11 @@ udp://tracker.therarbg.to:6969/announce
 
 udp://tracker.torrent.eu.org:451/announce
 
+udp://tracker.tryhackx.org:6969/announce
+
 udp://tracker.wildkat.net:6969/announce
+
+udp://tracker2.dler.org:80/announce
 
 udp://whybother.torrentonline.cc:42069/announce
 
